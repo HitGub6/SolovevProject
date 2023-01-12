@@ -1,0 +1,128 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: darkblue;
+    bottom: -10px;
+}
+
+main{
+    flex-grow: 1;
+    width: 60%;
+    margin: 30px auto;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+img{
+    max-width: 100%;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: darkblue;
+    top: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.title{
+    font-size: 38px;
+}
+
+.subtitle{
+    font-size: 44px;
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a.current{
+    color: darkblue;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+.dataframe{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.dataframe td, .dataframe th{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}

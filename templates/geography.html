@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Solov'ev Project</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="/demand">Востребованность</a></li>
+        <li><a href="/geography" class="current">География</a></li>
+    </ul>
+</nav>
+<header>
+    <img src="{% static 'img/logo.png' %}" class="logo">
+    <h1 class="title">Профессия Аналитик</h1>
+</header>
+<main>
+    <h2 class="page-title">География</h2>
+    <img src="{{ graph }}">
+    {% include table %}
+</main>
+<footer>
+    <p>Соловьев Иван Владимирович</p>
+    <p>РИ-210941</p>
+</footer>
+</body>
+</html>
